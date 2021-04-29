@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://sys-guard.com/contents/wp-content/uploads/2017/07/jqueryvalidation_20170712_1.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Laravel 文字列 文字数 バリデート</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Laravel 文字列 文字数 バリデート",
+  "datePublished": "2021-04-27",
+  "image": [https://s3.ap-northeast-1.amazonaws.com/ritolab.com/images/article/59575876b4551/48/4e9fc69a4a78af19df3a1dffb4d4ad5b.png,https://tac-blog.tech/wp-content/uploads/2018/08/c92cde902c312707cc10bb45b0dc74f4.png,https://www.larajapan.com/wp-content/uploads/2016/10/distinct_with_blank.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=laravel 文字列 文字数 バリデート",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Laravel 文字列 文字数 バリデート</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-dark" href="/%E3%81%8A%E3%81%86%E3%81%A1-%E3%83%87%E3%83%BC%E3%83%88-%E6%9C%9F%E5%BE%85.html">おうち デート 期待</a>
+											<a class="badge badge-light" href="/%E5%90%8D%E5%8F%A4%E5%B1%8B-%E3%83%87%E3%83%BC%E3%83%88-%E5%AE%A4%E5%86%85.html">名古屋 デート 室内</a>
+											<a class="badge badge-info" href="/%E6%9C%89-%E6%B2%B3%E5%86%85%E4%BA%BA%E5%BD%A2%E5%BA%97.html">有 河内人形店</a>
+											<a class="badge badge-info" href="/%E6%88%B0%E5%9C%8B-%E5%A4%A7-%E7%94%B2%E5%86%91-%E4%BA%BA%E5%BD%A2.html">戰國 大 甲冑 人形</a>
+											<a class="badge badge-info" href="/%E3%82%A2%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A4-3%E5%9B%9E%E3%83%87%E3%83%BC%E3%83%88.html">アムウェイ 3回デート</a>
+											<a class="badge badge-secondary" href="/%E3%81%BC%E3%81%8F-%E3%81%AF-%E6%98%8E%E6%97%A5-%E6%98%A8%E6%97%A5-%E3%81%AE-%E3%81%8D%E3%81%BF-%E3%81%A8-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%99%E3%82%8B-%E3%83%87%E3%82%A4%E3%83%AA%E3%83%BC%E3%83%A2%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">ぼく は 明日 昨日 の きみ と デート する デイリーモーション</a>
+											<a class="badge badge-danger" href="/%E6%A2%85%E7%94%B0-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81-%E5%B1%85%E9%85%92%E5%B1%8B.html">梅田 デート おすすめ 居酒屋</a>
+											<a class="badge badge-dark" href="/%E3%81%86%E3%81%A4-%E3%81%AE-%E6%99%82-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88.html">うつ の 時 の デート</a>
+											<a class="badge badge-warning" href="/%E6%B8%8B%E8%B0%B7-%E3%83%87%E3%83%BC%E3%83%88-%E5%B1%85%E9%85%92%E5%B1%8B-%E3%82%AB%E3%82%A6%E3%83%B3%E3%82%BF%E3%83%BC.html">渋谷 デート 居酒屋 カウンター</a>
+											<a class="badge badge-primary" href="/1-%E6%97%A5-%E3%83%8E%E3%83%BC%E3%83%96%E3%83%A9-%E7%BE%9E%E6%81%A5-%E3%83%87%E3%83%BC%E3%83%88-%E7%9B%B8%E6%BE%A4-%E3%83%AA%E3%83%8A.html">1 日 ノーブラ 羞恥 デート 相澤 リナ</a>
+											<a class="badge badge-light" href="/%E3%81%99%E3%81%9F%E3%81%A7%E3%82%85%E3%83%BC%E3%81%B0%E3%82%8C%E3%83%BC-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%A8%E3%81%B0%E3%81%97%E3%81%9F.html">すたでゅーばれー デート とばした</a>
+											<a class="badge badge-info" href="/%E3%81%BC%E3%81%8F%E3%81%AF%E6%98%8E%E6%97%A5-%E6%98%A8%E6%97%A5%E3%81%AE%E3%81%8D%E3%81%BF%E3%81%A8%E3%83%87%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B-%E5%B0%8F%E8%AA%AA.html">ぼくは明日 昨日のきみとデートする 小說</a>
+											<a class="badge badge-primary" href="/%E6%B8%A9%E6%B3%89-%E3%83%87%E3%83%BC%E3%83%88-%E6%97%A5%E5%B8%B0%E3%82%8A-%E9%96%A2%E6%9D%B1.html">温泉 デート 日帰り 関東</a>
+											<a class="badge badge-warning" href="/%E6%8B%B7%E5%95%8F%E5%9F%8E%E3%81%AE%E9%A3%9F%E4%BA%BA%E5%BD%A2.html">拷問城の食人形</a>
+											<a class="badge badge-primary" href="/%E6%97%A9%E6%92%83%E3%81%A1%E4%BA%BA%E5%BD%A2%E3%83%9E%E3%82%B0%E3%83%8A%E3%83%A0-gr%E5%8F%AC%E5%96%9A.html">早撃ち人形マグナム gr召喚</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://nodoame.net/wp-content/uploads/20200504_img02.png" data-lightbox="roadtrip" data-title="Laravel バリデーションの作成">
+						<img class="card-img" src="https://nodoame.net/wp-content/uploads/20200504_img02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfog-d9_vM-cQYW-ddg25nvgXTb1fgqGFDPptbo4lNKPpnI9AA_KgvdkBJIzmNWWMKtfQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel バリデーションの作成
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.larajapan.com/wp-content/uploads/2018/06/02e8a925ec53f35565496a359b3e39b8.png" data-lightbox="roadtrip" data-title="バリデーションの実例 連載 ララジャパン">
+						<img class="card-img" src="http://www.larajapan.com/wp-content/uploads/2018/06/02e8a925ec53f35565496a359b3e39b8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-uDXvk5mDCfXxGCSiFwOgdlDqQVXkMdYqACK_RxQX3uRLvh3qE1NOX9OyFrMXwA3Fb4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				バリデーションの実例 連載 ララジャパン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://promidea.co.jp/db/wp-content/uploads/2019/04/validate.png" data-lightbox="roadtrip" data-title="Laravelでバリデーションを実装するサンプルプログラム プロミディア合同会社">
+						<img class="card-img" src="https://promidea.co.jp/db/wp-content/uploads/2019/04/validate.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7nd787fTuPieexOm7-GrTKmsUlyWxio8H7jcoMtv-C9Bhd0PnLMvfhOlImtqUIR-YeSA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelでバリデーションを実装するサンプルプログラム プロミディア合同会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/10328749687187451849/8599973812336415392/1515683628" data-lightbox="roadtrip" data-title="Laravel 5 5 バリデーション ルール 日本語 Kojimankomanko">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/10328749687187451849/8599973812336415392/1515683628" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Fn-Kd9vkcExSGhNzkBzOTWyxzklnlfxOwbFTrTiPjERCFds9xb9U0fJwml3Hbrvu-Ns';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 5 バリデーション ルール 日本語 Kojimankomanko
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://nodoame.net/wp-content/uploads/nodoame.net-2020-05-04-13-20-16.png" data-lightbox="roadtrip" data-title="Laravel バリデーションの作成">
+						<img class="card-img" src="https://nodoame.net/wp-content/uploads/nodoame.net-2020-05-04-13-20-16.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT504UjHUDD1ip4BLA3ILItdKBfovEQvSN0OJQZBH0z56dYYulS9R0Ck_ckmo2NLzHEE_8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel バリデーションの作成
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sys-guard.com/contents/wp-content/uploads/2017/07/jqueryvalidation_20170712_1.png" data-lightbox="roadtrip" data-title="Jquery Validation 簡単にフォームをチェック バリデーション システムガーディアン株式会社">
+						<img class="card-img" src="https://sys-guard.com/contents/wp-content/uploads/2017/07/jqueryvalidation_20170712_1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1rxPgPhIQfZ5pjZol5JpIwfZNZ_HBTXLrf6lQg0TZwVIBZZpyunWHwJIKuWQPTmOL1FY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Jquery Validation 簡単にフォームをチェック バリデーション システムガーディアン株式会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://promidea.co.jp/db/wp-content/uploads/2019/04/o20vdBK02m7gcY1555492050_1555492175.png" data-lightbox="roadtrip" data-title="Laravelでバリデーションを実装するサンプルプログラム プロミディア合同会社">
+						<img class="card-img" src="https://promidea.co.jp/db/wp-content/uploads/2019/04/o20vdBK02m7gcY1555492050_1555492175.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Yv1Gf3VKD1W4ZLPvA8HmfgDKOJyCMvEWT6aAomd23ZGIcqmODTpz12OVchNGJNeAvfQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelでバリデーションを実装するサンプルプログラム プロミディア合同会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wakuwakubank.imgix.net/S3Doc/6f/3b/71/b51b8eab7b3dd0bf6f2a5edbaf0da316db024d2f67b7f86e192cbe90a2" data-lightbox="roadtrip" data-title="Laravel 保存版 バリデーションルールのまとめ わくわくbank">
+						<img class="card-img" src="https://wakuwakubank.imgix.net/S3Doc/6f/3b/71/b51b8eab7b3dd0bf6f2a5edbaf0da316db024d2f67b7f86e192cbe90a2" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_reyGLA2AGXP36eX-XoiXzvaBYil2s_s_Nc7ThVKWOqFt2fSIVooiYlsUraMgMhyTeo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 保存版 バリデーションルールのまとめ わくわくbank
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/563526/1845121c-98d1-baf3-f2ac-c176e609c152.png" data-lightbox="roadtrip" data-title="Laravel メール送信用入力フォームのバリデーション Validation 設定方法 コントローラを使ったバリデーションとエラーメッセージの変更 Laptrinhx">
+						<img class="card-img" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/563526/1845121c-98d1-baf3-f2ac-c176e609c152.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3PCOXELNUv_D2q2nvJUYSGpDo98-YT-rwA0lvlu_u6KTTrkM_wBtNbWwUpIo-nERLSGE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel メール送信用入力フォームのバリデーション Validation 設定方法 コントローラを使ったバリデーションとエラーメッセージの変更 Laptrinhx
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kamonohashi.club/wp-content/uploads/2019/07/20190705_01_001.png" data-lightbox="roadtrip" data-title="Php 文字列を指定文字数で分割する関数 プログラミングの足跡">
+						<img class="card-img" src="https://kamonohashi.club/wp-content/uploads/2019/07/20190705_01_001.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl62pjLorjYjSRmupYbDNp6yiPRYQ6-nsZq4Nv4dHYlfeJqGSzwXfnQe0ywAI0Aa4L-80';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php 文字列を指定文字数で分割する関数 プログラミングの足跡
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.larajapan.com/wp-content/uploads/2016/10/distinct_with_blank.png" data-lightbox="roadtrip" data-title="Ymikome ララジャパン">
+						<img class="card-img" src="https://www.larajapan.com/wp-content/uploads/2016/10/distinct_with_blank.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ1uiXj3maUfp91GD6XM0J-3lu2OkgdoPEqB01yUJ12uGU0EIFgFjmd-2sqbhHdcyWDcs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ymikome ララジャパン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DLaravel%25E3%2581%25AE%25E6%25A8%2599%25E6%25BA%2596%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25AE%25E3%2582%258F%25E3%2581%258B%25E3%2582%258A%25E3%2581%25AB%25E3%2581%258F%25E3%2581%2584%25E6%258C%2599%25E5%258B%2595%25E3%2582%2592%25E5%25AE%259F%25E9%25A8%2593%25E3%2581%2597%25E3%2581%25A6%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2581%259F%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D1cb44c311926a7f2b52f83834e386313&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540kd9951%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D89224b44ea7f663a35c2e1efb3566cd7&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=f016f71070fe34e9ab413a7f88248eca" data-lightbox="roadtrip" data-title="Laravelの標準バリデーションのわかりにくい挙動を実験して確かめたまとめ Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DLaravel%25E3%2581%25AE%25E6%25A8%2599%25E6%25BA%2596%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25AE%25E3%2582%258F%25E3%2581%258B%25E3%2582%258A%25E3%2581%25AB%25E3%2581%258F%25E3%2581%2584%25E6%258C%2599%25E5%258B%2595%25E3%2582%2592%25E5%25AE%259F%25E9%25A8%2593%25E3%2581%2597%25E3%2581%25A6%25E7%25A2%25BA%25E3%2581%258B%25E3%2582%2581%25E3%2581%259F%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D1cb44c311926a7f2b52f83834e386313&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540kd9951%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D89224b44ea7f663a35c2e1efb3566cd7&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=f016f71070fe34e9ab413a7f88248eca" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnoUbJNKVi93yt6g8Rwb2kjGGt1CbhfbgSAAccnspHY-wGSL9Ne8PRi4YaXfuz5t9OnY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelの標準バリデーションのわかりにくい挙動を実験して確かめたまとめ Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3.ap-northeast-1.amazonaws.com/ritolab.com/images/article/59575876b4551/48/4e9fc69a4a78af19df3a1dffb4d4ad5b.png" data-lightbox="roadtrip" data-title="Laravelのvalidationメソッドでバリデーションを実装する入門編 日本語エラーメッセージ付き">
+						<img class="card-img" src="https://s3.ap-northeast-1.amazonaws.com/ritolab.com/images/article/59575876b4551/48/4e9fc69a4a78af19df3a1dffb4d4ad5b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUQ3uuXtZQFIgpYFsEhq5o-X8Wr30YsrDwO7aYYZdvwpYaN98BlKRnQetX-ebAJsSMA2Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelのvalidationメソッドでバリデーションを実装する入門編 日本語エラーメッセージ付き
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://traveler0401.com/wp-content/uploads/2020/02/%E3%80%90Laravel%E3%80%91PHPUnit%E3%81%A7Validation%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%EF%BC%81.jpg" data-lightbox="roadtrip" data-title="Laravel Phpunitでvalidationのテストをする方法 泉浩兵ブログ">
+						<img class="card-img" src="https://traveler0401.com/wp-content/uploads/2020/02/%E3%80%90Laravel%E3%80%91PHPUnit%E3%81%A7Validation%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%EF%BC%81.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcmSGMdQ_zwMoHdZCxBEGudY78F00qwGYcB7TDS0ErUxTbBm7S8DZ4WLx2D9OFCGukog';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Phpunitでvalidationのテストをする方法 泉浩兵ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://tac-blog.tech/wp-content/uploads/2018/08/c92cde902c312707cc10bb45b0dc74f4.png" data-lightbox="roadtrip" data-title="Laravel5 6 5 7 リクエストを個別化してバリデーション Formrequest のるぼるのるの">
+						<img class="card-img" src="https://tac-blog.tech/wp-content/uploads/2018/08/c92cde902c312707cc10bb45b0dc74f4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGb3xxEhkf8LIA4a2XnIjWERIBuMj-QWZq3Pe8kr5oMQmre3Nqu8hoXEpJVbCYy9525es';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel5 6 5 7 リクエストを個別化してバリデーション Formrequest のるぼるのるの
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/563526/64ce5e04-bb23-be07-888a-cba417231214.png" data-lightbox="roadtrip" data-title="Laravel メール送信用入力フォームのバリデーション Validation 設定方法 コントローラを使ったバリデーションとエラーメッセージの変更 Qiita">
+						<img class="card-img" src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/563526/64ce5e04-bb23-be07-888a-cba417231214.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBm1yun_UdoDkiUhHkQUE0W7dmWpgWu0cVVwqduCYCz8jR9wwPQPZBfL1y1UsCW8W2BA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel メール送信用入力フォームのバリデーション Validation 設定方法 コントローラを使ったバリデーションとエラーメッセージの変更 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191024/20191024202739.png" data-lightbox="roadtrip" data-title="はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191024/20191024202739.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDE9k88Yn-fQkzUjMIrNoKHvwFL3Ds9M8zZf9n58nb2yM8mlbIT_Io5YJiT0KPxb5Esgc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://res.cloudinary.com/dlhzyuewr/image/upload/s--ZK1jaxNh--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:%25E3%2581%258D%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A1%2520%25E3%2580%258C%25E3%2581%25BF%25E3%2582%2593%25E3%2581%25AA%25E3%2581%25AE%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9...%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_65_bold:%25E3%2580%2590Laravel%2520%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2580%2591%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2583%25AA%25E3%2582%25AF%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588%2520%25E8%25A4%2587%25E6%2595%25B0%25E9%25A0%2585%25E7%259B%25AE%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25AE%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ljb25fNTYyOTE5Y2RjYS5qcGVn%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1609308637/og/new_txlqub.png" data-lightbox="roadtrip" data-title="Laravel テスト フォームリクエスト 複数項目バリデーションのテストコードを書いてみた">
+						<img class="card-img" src="https://res.cloudinary.com/dlhzyuewr/image/upload/s--ZK1jaxNh--/co_rgb:222%2Cg_south_west%2Cl_text:notosansjp-medium.otf_37_bold:%25E3%2581%258D%25E3%2582%258F%25E3%2581%25A3%25E3%2581%25A1%2520%25E3%2580%258C%25E3%2581%25BF%25E3%2582%2593%25E3%2581%25AA%25E3%2581%25AE%25E3%2583%259D%25E3%2583%25BC%25E3%2583%2588%25E3%2583%2595%25E3%2582%25A9...%2Cx_203%2Cy_98/c_fit%2Cco_rgb:222%2Cg_north_west%2Cl_text:notosansjp-medium.otf_65_bold:%25E3%2580%2590Laravel%2520%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2580%2591%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25BC%25E3%2583%25A0%25E3%2583%25AA%25E3%2582%25AF%25E3%2582%25A8%25E3%2582%25B9%25E3%2583%2588%2520%25E8%25A4%2587%25E6%2595%25B0%25E9%25A0%2585%25E7%259B%25AE%25E3%2583%2590%25E3%2583%25AA%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2581%25AE%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E6%259B%25B8%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyL2ljb25fNTYyOTE5Y2RjYS5qcGVn%2Cr_max%2Cw_90%2Cx_87%2Cy_72/v1609308637/og/new_txlqub.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLZabb6EikxtL6VGL0NL8Rpp6hqpawrRzQvNTezzw6rkBCkrZ4yXR84nfJAV_J2e5Pc08';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel テスト フォームリクエスト 複数項目バリデーションのテストコードを書いてみた
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191023/20191023222700.png" data-lightbox="roadtrip" data-title="はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/arakan_no_boku/20191023/20191023222700.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRws7vvjQLLKUrUcG2cDcD2_YEPfk8E57DX5Rg-B8S5-vj2wSuAPJlcsOyMEMFNqJ7RKX8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				はじめてlaravel6 0 バリデーション追加 カスタムバリデーション 入力画面 ２ Boku のitな日常
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://nodoame.net/wp-content/uploads/eyecatch_laravel_20191120.jpg" data-lightbox="roadtrip" data-title="Laravel バリデーションの作成">
+						<img class="card-img" src="https://nodoame.net/wp-content/uploads/eyecatch_laravel_20191120.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzDnQ_XUYW6v-GI4I2V6148z6RKSXUxolwubZ1qSy9GeEcdabEvuUan0u959jmlmlN9_s';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel バリデーションの作成
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.kabanoki.net/wp-content/uploads/2019/07/vuelidate-30.png" data-lightbox="roadtrip" data-title="Vuelidate でvue Js専用のバリデーションを実装する カバの樹">
+						<img class="card-img" src="https://www.kabanoki.net/wp-content/uploads/2019/07/vuelidate-30.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIAJp-RTaEpA6y9agM39V6iSv_wqj5LTLsw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Vuelidate でvue Js専用のバリデーションを実装する カバの樹
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.pupha.net/wp-content/uploads/2014/12/laravel-four-icon-1200x1200-cropped.png" data-lightbox="roadtrip" data-title="Laravel 5 で制御文字を禁止するバリデーションルールを追加する Web Application Security Memo">
+						<img class="card-img" src="https://www.pupha.net/wp-content/uploads/2014/12/laravel-four-icon-1200x1200-cropped.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVyI4s1QlhBoHvr4_hULlEk1M2O4DvjheUw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 で制御文字を禁止するバリデーションルールを追加する Web Application Security Memo
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://nodoame.net/wp-content/uploads/20200506_img04.png" data-lightbox="roadtrip" data-title="Laravel バリデーションの作成">
+						<img class="card-img" src="https://nodoame.net/wp-content/uploads/20200506_img04.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHb4vnRoJCk2QOZPsJoX9dt4S7hxXmwy4WA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel バリデーションの作成
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://assets.st-note.com/production/uploads/images/27923700/cc78e03e9e538aee7c309de82a34ae53.jpg" data-lightbox="roadtrip" data-title="掲示板を作ろう Appendix Laravel基礎 Webアプリケーションの開発 Laravelの教科書 Note">
+						<img class="card-img" src="https://assets.st-note.com/production/uploads/images/27923700/cc78e03e9e538aee7c309de82a34ae53.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVW2k8rPlkpYtZyceEOitrUeT7-4wYFzymJQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				掲示板を作ろう Appendix Laravel基礎 Webアプリケーションの開発 Laravelの教科書 Note
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="/search?q=%E5%85%A5%E5%8A%9B+%E3%82%A8%E3%83%A9%E3%83%BC+%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8&amp;tbm=isch" data-lightbox="roadtrip" data-title="3">
+						<img class="card-img" src="/search?q=%E5%85%A5%E5%8A%9B+%E3%82%A8%E3%83%A9%E3%83%BC+%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=%E5%85%A5%E5%8A%9B+%E3%82%A8%E3%83%A9%E3%83%BC+%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8&amp;tbm=isch';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				3
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://sys-guard.com/contents/wp-content/uploads/2017/07/jqueryvalidation_20170712_0.png" data-lightbox="roadtrip" data-title="Jquery Validation 簡単にフォームをチェック バリデーション システムガーディアン株式会社">
+						<img class="card-img" src="https://sys-guard.com/contents/wp-content/uploads/2017/07/jqueryvalidation_20170712_0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpY_1JZeMYasM5_3LAsJSwm-5w00tHV0zEA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Jquery Validation 簡単にフォームをチェック バリデーション システムガーディアン株式会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://kekaku.addisteria.com/wp/wp-content/uploads/2020/08/38da87bd9bcf5d7b8e6870eb617228e4.jpg" data-lightbox="roadtrip" data-title="リソースコントローラで新規作成 Create Storeアクション をログイン認証つきで実装する Laravel7入門 It業務で使えるプログラミングテクニック">
+						<img class="card-img" src="https://kekaku.addisteria.com/wp/wp-content/uploads/2020/08/38da87bd9bcf5d7b8e6870eb617228e4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwE8JoIqFUEu6szdozDRZEPvn06v48-iWw5g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				リソースコントローラで新規作成 Create Storeアクション をログイン認証つきで実装する Laravel7入門 It業務で使えるプログラミングテクニック
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://idealive.jp/blog/wp-content/uploads/2019/02/laravel-l-slant.png" data-lightbox="roadtrip" data-title="Laravelのパスワードの複雑性バリデーション Idealive Tech Blog">
+						<img class="card-img" src="https://idealive.jp/blog/wp-content/uploads/2019/02/laravel-l-slant.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaMQ2HCvzLbo0akiUqLB8soxHo09I1E1zamg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravelのパスワードの複雑性バリデーション Idealive Tech Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://liginc.co.jp/wp-content/uploads/2017/07/149932321957508500_43.jpg" data-lightbox="roadtrip" data-title="洗練された Laravel のバリデーションについてご紹介します 株式会社lig">
+						<img class="card-img" src="https://liginc.co.jp/wp-content/uploads/2017/07/149932321957508500_43.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtW0wBrVO7riG1NaeuC6bcdI68ktA2uF8Ofw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				洗練された Laravel のバリデーションについてご紹介します 株式会社lig
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.yukiiworks.com/wp-content/uploads/2019/05/laravel.png" data-lightbox="roadtrip" data-title="Laravel ランダムな文字列を生成する">
+						<img class="card-img" src="https://www.yukiiworks.com/wp-content/uploads/2019/05/laravel.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iEWmoBl4EAvnd6GeuUOPwYd-CsJzLjgdiA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel ランダムな文字列を生成する
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://reffect.co.jp/wp-content/uploads/2019/10/vue_vulidate.png" data-lightbox="roadtrip" data-title="これでわかるvue Jsのフォームバリデーションvuelidate アールエフェクト">
+						<img class="card-img" src="https://reffect.co.jp/wp-content/uploads/2019/10/vue_vulidate.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScZOi3_8xTQo1ycaHL8YOE9bTq_26SRZC3Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				これでわかるvue Jsのフォームバリデーションvuelidate アールエフェクト
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://camo.qiitausercontent.com/c4633891bee40edac8ffc4d1f9dc1cc70efbbb4e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3536333532362f36626565393764322d613433392d646338652d666239622d6565356138386362316334632e706e67" data-lightbox="roadtrip" data-title="Laravel メール送信用入力フォームのバリデーション Validation 設定方法 コントローラを使ったバリデーションとエラーメッセージの変更 Qiita">
+						<img class="card-img" src="https://camo.qiitausercontent.com/c4633891bee40edac8ffc4d1f9dc1cc70efbbb4e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3536333532362f36626565393764322d613433392d646338652d666239622d6565356138386362316334632e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPp0E2nQWFdRVWyZ5hBy6Zryt4GT-ccIkyw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel メール送信用入力フォームのバリデーション Validation 設定方法 コントローラを使ったバリデーションとエラーメッセージの変更 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://tac-blog.tech/wp-content/uploads/2018/08/c92cde902c312707cc10bb45b0dc74f4-730x410.png" data-lightbox="roadtrip" data-title="Laravel5 6 5 7 リクエストを個別化してバリデーション Formrequest のるぼるのるの">
+						<img class="card-img" src="https://tac-blog.tech/wp-content/uploads/2018/08/c92cde902c312707cc10bb45b0dc74f4-730x410.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9I2qhK4R8zlZeAP5uSN-thLohhIZwFu1jw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel5 6 5 7 リクエストを個別化してバリデーション Formrequest のるぼるのるの
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>

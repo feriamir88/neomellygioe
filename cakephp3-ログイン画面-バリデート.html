@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F130324%2Fbe36f791-7921-4c88-bdc7-16ef50402aec.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=55d496dbf075ddf6d3e663ece1a27a48
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Cakephp3 ログイン画面 バリデート</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Cakephp3 ログイン画面 バリデート",
+  "datePublished": "2021-04-27",
+  "image": [https://blog.imo-tikuwa.com/webmemo/wp-content/uploads/2019/09/cakephp3-bake-customize6-login-form.png,https://ogimage.blog.st-hatena.com/10328749687192814640/10328749687206647493/1521278429,https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2017/08/image-110.jpg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=cakephp3 ログイン画面 バリデート",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Cakephp3 ログイン画面 バリデート</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-warning" href="/%E3%83%87%E3%83%BC%E3%83%88-%E3%81%AB-%E8%AA%98%E3%81%A3-%E3%81%A6-%E3%81%93%E3%81%AA%E3%81%84.html">デート に 誘っ て こない</a>
+											<a class="badge badge-warning" href="/%E5%90%8D%E5%8F%A4%E5%B1%8B-%E6%A0%84-%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC-%E3%83%87%E3%83%BC%E3%83%88.html">名古屋 栄 ディナー デート</a>
+											<a class="badge badge-secondary" href="/4%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88-%E8%AA%98%E3%81%88%E3%81%AA%E3%81%84-%E7%94%B7%E6%80%A7%E5%BF%83%E7%90%86.html">4回目のデート 誘えない 男性心理</a>
+											<a class="badge badge-light" href="/%E3%81%9F%E3%81%B6%E3%82%93-%E3%83%87%E3%83%BC%E3%83%88%E3%81%AE%E7%B4%B0%E3%81%8B%E3%81%84%E4%BA%88%E5%AE%9A%E3%81%8C%E6%B1%BA%E3%81%BE%E3%82%8A%E3%81%9D%E3%81%86%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E3%81%9F%E3%82%81-%E3%81%93%E3%81%93%E3%81%A7%E3%83%A1%E3%83%BC%E3%83%AB%E3%81%AE%E5%BE%80%E5%BE%A9%E3%81%8C%E7%B5%82%E4%BA%86%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E6%80%96%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%81%AA-%E5%A9%9A%E6%B4%BB.html">たぶん デートの細かい予定が決まりそうになったため ここでメールの往復が終了することを怖れているな 婚活</a>
+											<a class="badge badge-primary" href="/%E3%83%87%E3%83%BC%E3%83%88-%E4%B8%AD-%E3%81%8A%E8%85%B9-%E7%97%9B%E3%81%84.html">デート 中 お腹 痛い</a>
+											<a class="badge badge-warning" href="/%E6%B4%97%E8%84%B3%E3%83%9E%E3%82%BE%E4%BA%BA%E5%BD%A2-hitomi.html">洗脳マゾ人形 hitomi</a>
+											<a class="badge badge-warning" href="/%E3%83%87%E3%83%BC%E3%83%88-%E4%BD%95-%E3%81%99%E3%82%8B-%E3%81%AE.html">デート 何 する の</a>
+											<a class="badge badge-warning" href="/2%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88%E3%81%A7%E6%89%8B%E3%82%92%E5%87%BA%E3%81%95%E3%81%AA%E3%81%84.html">2回目のデートで手を出さない</a>
+											<a class="badge badge-danger" href="/%E3%82%A2%E3%83%A9%E3%83%95%E3%82%A9%E3%83%BC-%E5%88%9D%E3%82%81%E3%81%A6-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88.html">アラフォー 初めて の デート</a>
+											<a class="badge badge-success" href="/%E5%BD%BC%E6%B0%8F-%E3%81%A8-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%AA-%E3%81%86-%E5%B1%B1%E5%AF%BA.html">彼氏 と デート な う 山寺</a>
+											<a class="badge badge-dark" href="/%E3%81%BC%E3%81%8F-%E3%81%AF-%E6%98%8E%E6%97%A5-%E6%98%A8%E6%97%A5-%E3%81%AE-%E3%81%8D%E3%81%BF-%E3%81%A8-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%99%E3%82%8B-fod.html">ぼく は 明日 昨日 の きみ と デート する fod</a>
+											<a class="badge badge-light" href="/%E3%81%A4%E3%81%BF%E3%81%8D-%E7%A5%9E%E6%A5%BD%E5%9D%82-%E3%83%87%E3%83%BC%E3%83%88.html">つみき 神楽坂 デート</a>
+											<a class="badge badge-warning" href="/%E7%90%86%E5%A4%96%E5%91%AA%E8%A9%9B-%E4%BA%BA%E5%BD%A2%E5%8C%96-%E5%A6%96%E7%B2%BE%E5%8C%96-%E4%BA%BA%E9%AD%9A%E5%8C%96-zip.html">理外呪詛 人形化 妖精化 人魚化 zip</a>
+											<a class="badge badge-warning" href="/%E3%81%84%E3%81%A4%E3%83%87%E3%83%BC%E3%83%88%E3%81%97%E3%81%A6%E3%82%8B%E3%81%AE.html">いつデートしてるの</a>
+											<a class="badge badge-dark" href="/%E5%B2%A9%E6%A7%BB-%E6%9B%BD%E6%A0%B9%E4%BA%BA%E5%BD%A2-%E9%AF%89%E3%81%AE%E3%81%BC%E3%82%8A.html">岩槻 曽根人形 鯉のぼり</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://s3.ap-northeast-1.amazonaws.com/ritolab.com/images/article/59575876b4551/84/18ed984326e5e3214635b45853901ebc.png" data-lightbox="roadtrip" data-title="Cakephp3のformクラスとカスタムバリデーションを使ってファイルアップロード機能を構築する">
+						<img class="card-img" src="https://s3.ap-northeast-1.amazonaws.com/ritolab.com/images/article/59575876b4551/84/18ed984326e5e3214635b45853901ebc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVIT_BX6zFwwOoLexX50_iVoCqY4M8F-VCtxE3jk8-OQepvDuCKhB65s4pd_ornK8DEA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3のformクラスとカスタムバリデーションを使ってファイルアップロード機能を構築する
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cakeqs.org/wp-content/uploads/2017/10/cakephp3.png" data-lightbox="roadtrip" data-title="Cakephp3 データベースを使用せずにmodelのバリデーションだけ使用する方法 ヌガブログ">
+						<img class="card-img" src="https://cakeqs.org/wp-content/uploads/2017/10/cakephp3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLByk6DMj1M11yuEu-OGOz_awexPdyPsLGbpSsNZKD-QyqAbg2ndsuN4R99OfqcPn3ptA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 データベースを使用せずにmodelのバリデーションだけ使用する方法 ヌガブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://dstrikes.net/wp-content/uploads/2018/06/cakeLogo.png" data-lightbox="roadtrip" data-title="Cakephp3 ログイン認証を使って管理画面を作る 稼げ アフィリエイトパワーズ">
+						<img class="card-img" src="https://dstrikes.net/wp-content/uploads/2018/06/cakeLogo.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUU_9LrQfYWvF1gvcDNjjHz7GQ4gN3TtABoLWq-8oY0jANqASQFwjmUzrPNCTCdSVGOA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 ログイン認証を使って管理画面を作る 稼げ アフィリエイトパワーズ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/10328749687234956722/8599973812273224329/1498222770" data-lightbox="roadtrip" data-title="Cakephp3でフォームに確認画面を用意する どのようにしてvalidationを適用するか ブロックチェーンに詳しいフリーのエンジニアのit備忘録">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/10328749687234956722/8599973812273224329/1498222770" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTR8XBDNyR7wd94j5nx92uMIyPmvOEy1NIheH25TmqWL4ZEfSNLzMdzbJed8iPlmNnBe8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3でフォームに確認画面を用意する どのようにしてvalidationを適用するか ブロックチェーンに詳しいフリーのエンジニアのit備忘録
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.imo-tikuwa.com/webmemo/wp-content/uploads/2019/09/cakephp3-bake-customize6-login-form.png" data-lightbox="roadtrip" data-title="Cakephp3のbakeによる自動生成をカスタマイズする６ Webシステム開発のメモなど">
+						<img class="card-img" src="https://blog.imo-tikuwa.com/webmemo/wp-content/uploads/2019/09/cakephp3-bake-customize6-login-form.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl6LF-vakTBiSgYGmt-_2ZCJuqSkndamhOuEHq_DyRE8DHs_JP0BX57TFqGSUdj_qNH3k';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3のbakeによる自動生成をカスタマイズする６ Webシステム開発のメモなど
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth-4.png" data-lightbox="roadtrip" data-title="Cakephp3に認証機能を追加する It底辺脱却ブログ">
+						<img class="card-img" src="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth-4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Y7GtoPufq1dfcf61Q4yKUZz51SzAxz6-73A1BeAL-yfsUn-o1bY1VSB7Ka17KQdHjOk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3に認証機能を追加する It底辺脱却ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="http://cdn-ak.f.st-hatena.com/images/fotolife/y/yuzurus/20150609/20150609230203.png" data-lightbox="roadtrip" data-title="チュートリアル 最新フレームワークcakephp3でブックマーカーを作ってみる その2 Yuzu Log">
+						<img class="card-img" src="http://cdn-ak.f.st-hatena.com/images/fotolife/y/yuzurus/20150609/20150609230203.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEFEd45ERKSkuEpipGQK3dPfAE6OMZmNX176RVaVxQeHFMVXhNhc6t574z8r6TZ6V_yKM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				チュートリアル 最新フレームワークcakephp3でブックマーカーを作ってみる その2 Yuzu Log
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth-2.png" data-lightbox="roadtrip" data-title="Cakephp3に認証機能を追加する It底辺脱却ブログ">
+						<img class="card-img" src="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcEBMiO18bl40vtCJq3VLZBltIJ_gHcqkDr--Mkh8ewxOO9R62QHvFEJxGXNVuM3j56K4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3に認証機能を追加する It底辺脱却ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/cakephp3-171115022922/95/cakephp3-29-638.jpg?cb=1510713262" data-lightbox="roadtrip" data-title="Cakephp3入門">
+						<img class="card-img" src="https://image.slidesharecdn.com/cakephp3-171115022922/95/cakephp3-29-638.jpg?cb=1510713262" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtcQlKBlrJlL37TqAQOC9o-MO023mAsGJeZKk14oUCvp6cZti1q7LutAZBajm3fTINz88';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3入門
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F130324%2Fbe36f791-7921-4c88-bdc7-16ef50402aec.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=55d496dbf075ddf6d3e663ece1a27a48" data-lightbox="roadtrip" data-title="画像あり どちらか一方は入力必須 のvalidationをcakephp3 8で行う Laptrinhx">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F130324%2Fbe36f791-7921-4c88-bdc7-16ef50402aec.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=55d496dbf075ddf6d3e663ece1a27a48" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYkzOp7hQbBOewlEJr_cetF5mZjT-ILJcRv8hqqYQ1NgFrn-Wiq1wNTD6faX6n8NN6eVM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				画像あり どちらか一方は入力必須 のvalidationをcakephp3 8で行う Laptrinhx
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.grooving-earth.com/wp-content/uploads/2016/02/160211_main.jpg" data-lightbox="roadtrip" data-title="Cakephp3 Validationのエラーメッセージが表示されない問題の解決方法 Grooving Earth">
+						<img class="card-img" src="https://www.grooving-earth.com/wp-content/uploads/2016/02/160211_main.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1fYcT1Fy7KezN23I2oxQCgERt-ziLMLyaRalsKRIYkOiiBFa_Mdp9PvrJvc3UyS7Q5So';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 Validationのエラーメッセージが表示されない問題の解決方法 Grooving Earth
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://blog.chatlune.jp/wp-content/uploads/2018/03/168a30836bd23e051e8c2f75649ec68f.png" data-lightbox="roadtrip" data-title="Cakephp3で最低限のログイン画面 Auth認証 を作ってみた 株 シャルーン">
+						<img class="card-img" src="http://blog.chatlune.jp/wp-content/uploads/2018/03/168a30836bd23e051e8c2f75649ec68f.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxyMd3dirxLGfPjJE42Q6GZmGJL8ygcNvyX6OEmwVoR_aOmbcAiOb_PhpU7po6maoPopo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3で最低限のログイン画面 Auth認証 を作ってみた 株 シャルーン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://norm-nois.com/blog/wp-content/uploads/2016/02/pepepepepepepe.gif" data-lightbox="roadtrip" data-title="Cakephp3を触ってみました バリデーションのバリエーション 日記の間 あかつきのお宿">
+						<img class="card-img" src="https://norm-nois.com/blog/wp-content/uploads/2016/02/pepepepepepepe.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqeAePcM-N2PvEsMOBq2sFWa31kyHuQP2ukubscM3cHw_IH0HE0NyGNzDJ2gUM8DF4lZY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3を触ってみました バリデーションのバリエーション 日記の間 あかつきのお宿
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/10328749687192814640/10328749687206647493/1521278429" data-lightbox="roadtrip" data-title="Cakephp3 Validationでのnotemptyとrequirepresenceの違い たなちの備忘録">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/10328749687192814640/10328749687206647493/1521278429" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze87SPngM9Vj1bKynoEJUQ6-haHwOQ0pKImceHdWLYTNWZinHSS79eVtCXKULl5VfRGc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 Validationでのnotemptyとrequirepresenceの違い たなちの備忘録
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/8599973812301324765/8599973812320731448/1511511274" data-lightbox="roadtrip" data-title="Cakephp3 3 5で増えた正規表現のバリデータ Thebakerのブログ">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/8599973812301324765/8599973812320731448/1511511274" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj2PdbyrsNPQJkIGM0zPOwY57pXuO6aiCJQRywCJicLDks2JFBsK98lTq1bDT_PIJMI88';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 3 5で増えた正規表現のバリデータ Thebakerのブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/8454420450101908117/6653812171404894440/1477901940" data-lightbox="roadtrip" data-title="Cakephp3でカスタムバリデーション作ってみた またどこかでctoっぽいことやってる人のブログ">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/8454420450101908117/6653812171404894440/1477901940" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpopwmKfsI7cDR8Js0PYwsKta9KMNFl453MWtETTDUbxRjLqxhvY2N3b-EdrolCuEToCg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3でカスタムバリデーション作ってみた またどこかでctoっぽいことやってる人のブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://masyus.work/wp-content/uploads/2018/10/Bake-with-CakePHP-e1582450911276.png" data-lightbox="roadtrip" data-title="Cakephp3 Jsonデータをdbへ格納する際にbeforemarshal を活用してみた Masyus Work">
+						<img class="card-img" src="https://masyus.work/wp-content/uploads/2018/10/Bake-with-CakePHP-e1582450911276.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGV1vowXUr8d9zXD93Hh1bUnop8jG6TQArMm7ZrTKCi7H95BispWKy5SD1rK9ldid87U';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 Jsonデータをdbへ格納する際にbeforemarshal を活用してみた Masyus Work
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3.ap-northeast-1.amazonaws.com/wp.lancers.jp/engineerblog/wp-content/uploads/2017/05/CakePHP3.jpg" data-lightbox="roadtrip" data-title="Cakephp3 Cakephp4にmigrateしてみた ランサーズ Lancers エンジニアブログ">
+						<img class="card-img" src="https://s3.ap-northeast-1.amazonaws.com/wp.lancers.jp/engineerblog/wp-content/uploads/2017/05/CakePHP3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSkCT4JfCFz450F3tev6z7DBE6Z9YqHJbhapMqFHd80ZZhldUmPGTPnd5Op3HfexTfVNE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 Cakephp4にmigrateしてみた ランサーズ Lancers エンジニアブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth.jpg" data-lightbox="roadtrip" data-title="Cakephp3に認証機能を追加する It底辺脱却ブログ">
+						<img class="card-img" src="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvY76Lct-2pr5j2bJ32huX7yLRTQnO8S2oI940mm89PEOr0va2te-Uczk8uPl2bMENkM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3に認証機能を追加する It底辺脱却ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://level-up-notebook.com/assets/img/20181008/cakephp_6_1.png" data-lightbox="roadtrip" data-title="Cakephp3 ログイン画面とログイン機能の作り方 入門 Level Up Notebook Com">
+						<img class="card-img" src="https://level-up-notebook.com/assets/img/20181008/cakephp_6_1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7Y3CbLWE-mYGSxD1de-klmwbKcAleT1p6wt8_66wC49fbo84-z1VGvsRiknPy3GgWT4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 ログイン画面とログイン機能の作り方 入門 Level Up Notebook Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/cakephp3-171115022922/95/cakephp3-38-638.jpg?cb=1510713262" data-lightbox="roadtrip" data-title="Cakephp3入門">
+						<img class="card-img" src="https://image.slidesharecdn.com/cakephp3-171115022922/95/cakephp3-38-638.jpg?cb=1510713262" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWLgKiQ1tPdUbr3hlckRF3UiytRjy4ojDGtA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3入門
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://gray-code.com/wp-content/uploads/2016/12/pic03.png" data-lightbox="roadtrip" data-title="入力値のバリデーション Graycode Phpプログラミング">
+						<img class="card-img" src="https://gray-code.com/wp-content/uploads/2016/12/pic03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqj-08TPW83klnTEctzCneSELMYhOikHJySA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				入力値のバリデーション Graycode Phpプログラミング
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.s-giken.net/wp-content/uploads/2017/04/20170415.jpg" data-lightbox="roadtrip" data-title="Cakephp3のcakedc Usersのバリデーションのカスタマイズ方法解説 エス技研">
+						<img class="card-img" src="https://blog.s-giken.net/wp-content/uploads/2017/04/20170415.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYfX1BZ0iLWGYXQBhd-MqS16uXuszw5s0AA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3のcakedc Usersのバリデーションのカスタマイズ方法解説 エス技研
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2017/08/image-110.jpg" data-lightbox="roadtrip" data-title="Cakephp入門 Authでユーザーのログイン認証を設定する方法 侍エンジニアブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2017/08/image-110.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHxSqkblibBR6e88jH3CWnK9MQgKDdpzAiQw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp入門 Authでユーザーのログイン認証を設定する方法 侍エンジニアブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/cakephp3-171115022922/95/cakephp3-1-638.jpg?cb=1510713262" data-lightbox="roadtrip" data-title="Cakephp3入門">
+						<img class="card-img" src="https://image.slidesharecdn.com/cakephp3-171115022922/95/cakephp3-1-638.jpg?cb=1510713262" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Y93nHi-WUKPuVhQqUOTgGNbGsvTnJ6l8Ig';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3入門
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.webopixel.net/blog/wp-content/uploads/2020/03/0320-01.png" data-lightbox="roadtrip" data-title="Cakephp4でブログサイト作るチュートリアル Webopixel">
+						<img class="card-img" src="https://www.webopixel.net/blog/wp-content/uploads/2020/03/0320-01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpPQUipD3omTefWhj_pABRopvzZa6yeyEatQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp4でブログサイト作るチュートリアル Webopixel
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth-3.png" data-lightbox="roadtrip" data-title="Cakephp3に認証機能を追加する It底辺脱却ブログ">
+						<img class="card-img" src="https://moewe-net.com/wp-content/uploads/2019/08/cakephp-auth-3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8VChV-KWYM7L5SVy1hGl8U-cKp4mi4O_EA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3に認証機能を追加する It底辺脱却ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://gomocool.net/gomokulog/wp-content/uploads/2015/08/CakePHP3-3-1.png" data-lightbox="roadtrip" data-title="Cakephp3 ざっくりとフォーム認証 Gomokulog">
+						<img class="card-img" src="http://gomocool.net/gomokulog/wp-content/uploads/2015/08/CakePHP3-3-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2w0Tww-zvfN9WRsJjaq50WH0Hk0YDFB6hgg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 ざっくりとフォーム認証 Gomokulog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/3ef614823e1f53181b4e464877146e0a.png" data-lightbox="roadtrip" data-title="Php Cakephp3で未入力のレコードはdbに登録しないようにしたいです Teratail">
+						<img class="card-img" src="https://teratail-v2.storage.googleapis.com/uploads/contributed_images/3ef614823e1f53181b4e464877146e0a.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQlEBVTEe2T0H4MUY_yDA9b_6Uy6VI2Q-gQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Php Cakephp3で未入力のレコードはdbに登録しないようにしたいです Teratail
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://amaraimusi.sakura.ne.jp/note_prg/cakephp3/img/tutorial/s7a2-2.png" data-lightbox="roadtrip" data-title="Cakephp3のチュートリアル">
+						<img class="card-img" src="https://amaraimusi.sakura.ne.jp/note_prg/cakephp3/img/tutorial/s7a2-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTabh5DoJ3JzhBJDMcdxDQHYhDB6q_DefULXA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3のチュートリアル
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://images-fe.ssl-images-amazon.com/images/I/41gyprjhUvL.jpg" data-lightbox="roadtrip" data-title="Cakephp3 ログイン認証を使って管理画面を作る 稼げ アフィリエイトパワーズ">
+						<img class="card-img" src="https://images-fe.ssl-images-amazon.com/images/I/41gyprjhUvL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_FP0rEY_W7zXdGNoRm0ML7LaAqI7167czLQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3 ログイン認証を使って管理画面を作る 稼げ アフィリエイトパワーズ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.s-giken.net/wp-content/uploads/2017/02/20170225.jpg" data-lightbox="roadtrip" data-title="Cakephp3で値を入力直後にバリデーションする方法解説 エス技研">
+						<img class="card-img" src="https://blog.s-giken.net/wp-content/uploads/2017/02/20170225.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfcudgKyEKGgBPo7cyw6luBTELuJluIMmHaA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp3で値を入力直後にバリデーションする方法解説 エス技研
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2017/08/pic11.png" data-lightbox="roadtrip" data-title="Cakephp入門 バリデーションの使い方を解説 Validation 侍エンジニアブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/samurai-blog-media/blog/wp-content/uploads/2017/08/pic11.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-LRCsaaOSdSw3UEsHgIIHbCI76NVtJEhlQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Cakephp入門 バリデーションの使い方を解説 Validation 侍エンジニアブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>

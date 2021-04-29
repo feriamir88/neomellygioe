@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://media.geeksforgeeks.org/wp-content/uploads/20191209232202/Laravel-Validation-Rules-Default-Error-GfG.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Laravel バリデート Required</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Laravel バリデート Required",
+  "datePublished": "2021-04-27",
+  "image": [https://user-images.githubusercontent.com/67483209/86133124-900e6000-baf0-11ea-8d9e-51302d9ad21d.png,https://laravelnews.imgix.net/images/valiator-oo-featured.png?ixlib=php-3.3.0,https://i.stack.imgur.com/JdQJU.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=laravel バリデート required",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Laravel バリデート Required</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-primary" href="/%E7%97%9B%E3%81%84-%E4%BA%BA%E5%BD%A2-%E8%80%85-63.html">痛い 人形 者 63</a>
+											<a class="badge badge-primary" href="/%E3%81%8A%E3%81%94%E3%82%89%E3%82%8C%E3%82%8B%E3%83%87%E3%83%BC%E3%83%88%E3%81%AF.html">おごられるデートは</a>
+											<a class="badge badge-light" href="/%E6%8E%9B%E3%81%91%E6%99%82%E8%A8%88-%E4%BA%BA%E5%BD%A2%E3%81%8C%E3%81%A7%E3%81%A6%E3%81%8F%E3%82%8B.html">掛け時計 人形がでてくる</a>
+											<a class="badge badge-secondary" href="/%E5%AD%90%E4%BE%9B%E3%81%AF%E4%BA%BA%E5%BD%A2-%E8%99%90%E5%BE%85.html">子供は人形 虐待</a>
+											<a class="badge badge-dark" href="/%E6%97%A2%E7%9F%A5%E3%81%AE%E4%BA%BA%E5%BD%A2%E6%A6%82%E5%BF%B5%E6%8E%A5%E7%9D%80-%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%82%E3%82%8A%E3%81%8D%E3%81%AE-%E3%83%8D%E3%83%83%E3%83%88-%E5%BA%83%E3%81%8C%E3%82%8A%E5%85%88%E3%81%82%E3%82%8A%E3%81%8D%E3%81%AE.html">既知の人形概念接着 ゲームありきの ネット 広がり先ありきの</a>
+											<a class="badge badge-dark" href="/%E3%81%82%E3%82%84-%E3%81%A1%E3%81%A8-%E6%B0%B4%E8%BE%BA-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%AA-%E3%81%86.html">あや ちと 水辺 デート な う</a>
+											<a class="badge badge-secondary" href="/2-%E5%9B%9E%E7%9B%AE-%E3%83%87%E3%83%BC%E3%83%88-%E9%A2%A8%E9%82%AA.html">2 回目 デート 風邪</a>
+											<a class="badge badge-danger" href="/%E5%B9%B8%E7%A6%8F%E3%81%AE%E4%BA%BA%E5%BD%A2-%E3%82%A8%E3%83%AD.html">幸福の人形 エロ</a>
+											<a class="badge badge-success" href="/%E6%B7%AB%E8%AA%9E%E3%82%92%E5%96%8B%E3%82%8B%E4%BF%BA%E3%81%A0%E3%81%91%E3%81%AE%E6%80%A7%E6%AC%B2%E5%87%A6%E7%90%86%E4%BA%BA%E5%BD%A2-%E6%98%A5%E8%8F%9C%E3%81%AF%E3%81%AA-%E5%8B%95%E7%94%BB.html">淫語を喋る俺だけの性欲処理人形 春菜はな 動画</a>
+											<a class="badge badge-danger" href="/%E3%83%87%E3%83%BC%E3%83%88-%E3%81%AB-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81-%E3%81%AE-%E5%A0%B4%E6%89%80.html">デート に おすすめ の 場所</a>
+											<a class="badge badge-danger" href="/%E7%89%A7%E5%A0%B4%E7%89%A9%E8%AA%9E-%E7%89%9B%E3%81%AE%E4%BA%BA%E5%BD%A2.html">牧場物語 牛の人形</a>
+											<a class="badge badge-warning" href="/adz-317-1%E6%B3%8A2%E6%97%A5%E3%82%84%E3%82%8A%E3%81%BE%E3%81%8F%E3%82%8A%E6%B8%A9%E6%B3%89%E3%83%87%E3%83%BC%E3%83%88-%E6%9C%89%E7%94%B0%E3%82%82%E3%82%82%E3%81%8B.html">adz 317 1泊2日やりまくり温泉デート 有田ももか</a>
+											<a class="badge badge-primary" href="/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E4%BA%BA-%E3%81%8B%E5%A5%B3%E6%80%A7%E3%83%87%E3%83%BC%E3%83%88-%E6%94%AF%E6%89%95%E3%81%84.html">アメリカ人 か女性デート 支払い</a>
+											<a class="badge badge-dark" href="/de%E3%83%87%E3%83%BC%E3%83%88-%E5%A4%8F%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88%E3%81%AF%E5%88%BA%E6%BF%80%E7%9A%84%E3%81%AB-%E6%98%9F%E5%B4%8E%E3%82%A2%E3%83%B3%E3%83%AAtorrent.html">deデート 夏のデートは刺激的に 星崎アンリtorrent</a>
+											<a class="badge badge-primary" href="/%E4%BA%8C-%E5%9B%9E%E7%9B%AE-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88-%E4%BB%98%E3%81%8D%E5%90%88%E3%81%86.html">二 回目 の デート 付き合う</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://bosnadev.com/wp-content/uploads/2015/01/laravel_validation-what_we_are_building.png" data-lightbox="roadtrip" data-title="Laravel Validation Comprehensive Guide Bosnadev Code Factory">
+						<img class="card-img" src="https://bosnadev.com/wp-content/uploads/2015/01/laravel_validation-what_we_are_building.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYIpjmhvi7yDPLPOh-rsh1-Q6e5YE1Sajqkw0v1NZEEHm04fQAHxpXVjBVpEkKZTVImMo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Comprehensive Guide Bosnadev Code Factory
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1573823564_FireShot%20Capture%20007%20-%20Required%20With%20All%20Validation%20-%20localhost.png" data-lightbox="roadtrip" data-title="Required With All Validation In Laravel 6">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1573823564_FireShot%20Capture%20007%20-%20Required%20With%20All%20Validation%20-%20localhost.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG5lEdbqBGiE337dZCiWni0l0Znw6N3poRZyT1gwQNMX4eKUlQXDSOLEac6hSB4KgtOe4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Required With All Validation In Laravel 6
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.phpflow.com/wp-content/uploads/2018/09/laravel-validation-1200x865.png" data-lightbox="roadtrip" data-title="Laravel 5 6 Form Validation Client Side Using Jquery Phpflow Com">
+						<img class="card-img" src="https://www.phpflow.com/wp-content/uploads/2018/09/laravel-validation-1200x865.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJs3sSpr5oqd8vkr0-vb_ykpik8GSkPCK6o80gSGhvvFy1_uZV7aVbla6hifxA6TQ4hf4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 6 Form Validation Client Side Using Jquery Phpflow Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/JNGQP.png" data-lightbox="roadtrip" data-title="How To Set Laravel Custom Validation Message With Laravel Rules Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/JNGQP.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWcFUGOAvP5DxQvxlEcDT4kJd00xvqTLjN3Mh3RuZ9mSE9csIdStFG6g-DuntsQYRxAM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Set Laravel Custom Validation Message With Laravel Rules Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.itsolutionstuff.com/upload/laravel-form-validation.png" data-lightbox="roadtrip" data-title="Laravel 5 3 Form Input Validation Rules Example With Demo Itsolutionstuff Com">
+						<img class="card-img" src="https://www.itsolutionstuff.com/upload/laravel-form-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWioOy2lqNvolUmu73WFjSCwpGoqtIMPvpfOri3krS75DP6dJoo7DLe7eg1O-N9Qcq-m4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 3 Form Input Validation Rules Example With Demo Itsolutionstuff Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vegibit.com/wp-content/uploads/2014/02/laravel-form-validation.png" data-lightbox="roadtrip" data-title="Laravel Validation Vegibit">
+						<img class="card-img" src="https://vegibit.com/wp-content/uploads/2014/02/laravel-form-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGVVdiZj9OGyL7pFKadgRFd1Dl4XMXdw5TMJVjqy6_33Y1Im0eAzvw-tkwW9ROxB9gB9I';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Vegibit
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1573819766_Laravel%206%20required_with%20Validation%20Example.png" data-lightbox="roadtrip" data-title="Laravel 6 Required With Validation Example">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1573819766_Laravel%206%20required_with%20Validation%20Example.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNIHnkpiUHLZJaZngyOmBGtGvflCd9KfYFTAqulWv_nPLdke-39ilJIEMFd7H-NkQC5G8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 6 Required With Validation Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/JdQJU.png" data-lightbox="roadtrip" data-title="Laravel Validation Issue Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/JdQJU.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GqNJYvhcc3kb7jzu-7adF-wnCpdx6dE3nTZ9-XKzTF9whHsphv2IEHWX3URRTzwP8E4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Issue Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.positronx.io/wp-content/uploads/2020/06/jquery-form-validation-10131-03.jpg" data-lightbox="roadtrip" data-title="How To Create And Validate Form In Laravel 8 Positronx Io">
+						<img class="card-img" src="https://www.positronx.io/wp-content/uploads/2020/06/jquery-form-validation-10131-03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvflSFGSq8d6C3YOC6crH97L6iI90uOtjbKmp3aTrbiS7VX0BrkQj-FrMtsGzm2sxPQE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create And Validate Form In Laravel 8 Positronx Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://demo.webslesson.info/images/laravel-58-client-side-form-validation-using-parsleysjs-blog.jpg" data-lightbox="roadtrip" data-title="Front End Form Validation Using Parsleys Js In Laravel 5 8 Webslesson">
+						<img class="card-img" src="http://demo.webslesson.info/images/laravel-58-client-side-form-validation-using-parsleysjs-blog.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsQvm-N4rXfQFR1Es8O2FWkcZukaS_LukI6Z77dKPdNLEgMlbTzOQu7qajQgD4dCkzLAg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Front End Form Validation Using Parsleys Js In Laravel 5 8 Webslesson
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://laravelnews.imgix.net/images/laravel-validation.png?ixlib=php-3.3.0" data-lightbox="roadtrip" data-title="Improvements To The Laravel Unique And Exists Validation Rules Laravel News">
+						<img class="card-img" src="https://laravelnews.imgix.net/images/laravel-validation.png?ixlib=php-3.3.0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKKusLCIbVO3D6YMP9uFuKUZ-5S3zJFwlfvHjOh85gJO9WK5HR6C5v1BMRqBfDq7fI9rI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Improvements To The Laravel Unique And Exists Validation Rules Laravel News
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1573825294_FireShot%20Capture%20001%20-%20%20-%20localhost.png" data-lightbox="roadtrip" data-title="Required If Validation In Laravel 6 With Example">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1573825294_FireShot%20Capture%20001%20-%20%20-%20localhost.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtJpySl7FKc-zMrdfi6DMuNdCnAe1dfqCkQUZhspl6R1NmWk46ZvPTlI4APGaHlmUgdpg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Required If Validation In Laravel 6 With Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://codebriefly.com/wp-content/uploads/2018/08/Laravel-validation-errors-view.png" data-lightbox="roadtrip" data-title="Laravel Form Request Validations Code Briefly">
+						<img class="card-img" src="https://codebriefly.com/wp-content/uploads/2018/08/Laravel-validation-errors-view.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXzYHlTAmJXrkbxwowGec-YQWInoXKloNqkYSuRxlBz78DV8q3YCrPuyKl8XJ3tYCHQs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Form Request Validations Code Briefly
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://appdividend.com/wp-content/uploads/2019/03/Laravel-5.8-Form-Validation-Tutorial-With-Example-Custom-Validation.png" data-lightbox="roadtrip" data-title="Laravel Validation Example Laravel Form Validation">
+						<img class="card-img" src="https://appdividend.com/wp-content/uploads/2019/03/Laravel-5.8-Form-Validation-Tutorial-With-Example-Custom-Validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXFeQhB86OWmIN2n9vKWqNOs5b_L6HxvQirWGCXWj5tOX4dR9-KhyO9PoWT4sH2hC4bFs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Example Laravel Form Validation
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/R3Msk.png" data-lightbox="roadtrip" data-title="Laravel Ajax Form Validation With Input Field Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/R3Msk.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQbjJ9-MW9lvjgOUGPq4TRWkzY1guyYH4SNQihhmre0ma_qubnZSJ31XNwLa_OTxX50c';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Ajax Form Validation With Input Field Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://codingdriver.com/wp-content/uploads/2019/09/laravel-form-input-validation-example-tutorials.png" data-lightbox="roadtrip" data-title="Laravel Form Validation Tutorial With Example">
+						<img class="card-img" src="https://codingdriver.com/wp-content/uploads/2019/09/laravel-form-input-validation-example-tutorials.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkV3XeZHIrao9KVb9lzM5D0xjoLrSW4YxbHIeA7lxagQ1upUZaB1fOQg7SmtJqpwqT5Zc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Form Validation Tutorial With Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.itsolutionstuff.com/upload/laravel-request-validation-class.png" data-lightbox="roadtrip" data-title="Laravel Form Validation Request Class Example Itsolutionstuff Com">
+						<img class="card-img" src="https://www.itsolutionstuff.com/upload/laravel-request-validation-class.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx2ogecLThMLgOnYW-8yY2mBR9x-Cb0Vq8WnBbHF3NGBTT_9DzCXVuY-4HKfkZ-Ru9c5E';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Form Validation Request Class Example Itsolutionstuff Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1580468735_validationpage.png" data-lightbox="roadtrip" data-title="Form Validation Example In Laravel 6 Tutorial">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1580468735_validationpage.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1qWvZsr3ypB1GESm9at0ovTfgymWceb6lNBd3zLbx8kYDps6-Nz1_9QJrBz5vomEZL8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Form Validation Example In Laravel 6 Tutorial
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/laravel-required-if-validation-rule.png" data-lightbox="roadtrip" data-title="Laravel Required If Validation Rule Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/laravel-required-if-validation-rule.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuqFZdl290GmzCCoaj9xrCr0JZDIrWqFmmJYOcap8SzOJDISuGDNuc_sR_o2wZPbZ7xg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Required If Validation Rule Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://scotch-res.cloudinary.com/image/upload/dpr_3,w_300,q_auto:good,f_auto/media/1965/O2uieS2fRpG8A1lkWJUT_screencapture-localhost-8000-contact-1480639228130.png" data-lightbox="roadtrip" data-title="Deep Dive Into Custom Validation Error Messages In Laravel Scotch Io">
+						<img class="card-img" src="https://scotch-res.cloudinary.com/image/upload/dpr_3,w_300,q_auto:good,f_auto/media/1965/O2uieS2fRpG8A1lkWJUT_screencapture-localhost-8000-contact-1480639228130.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyiAERuNTlbkOWupi69hge9up7sws1R5EXYYUhOiWDo9fdCLcGKOoQkLbo3S-HeOVGULk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Deep Dive Into Custom Validation Error Messages In Laravel Scotch Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://media.geeksforgeeks.org/wp-content/uploads/20191209232202/Laravel-Validation-Rules-Default-Error-GfG.png" data-lightbox="roadtrip" data-title="Laravel Validation Rules Geeksforgeeks">
+						<img class="card-img" src="https://media.geeksforgeeks.org/wp-content/uploads/20191209232202/Laravel-Validation-Rules-Default-Error-GfG.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpZDyJcquvgBRBRrpVqW7zD1u6xFx03GzIWA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Rules Geeksforgeeks
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1583327720_form-validation.png" data-lightbox="roadtrip" data-title="Laravel 7 Form Validation Example">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1583327720_form-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgOi36wwZyaRCF0Z0etVXLXq_Bk-0x7on3sA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 7 Form Validation Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/laravel-form-request-validation-exists-error.png" data-lightbox="roadtrip" data-title="Laravel Form Request Validation Exists Error Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/laravel-form-request-validation-exists-error.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbyAeVNDKz_s3Fmg8ZsoT50Pt0w3dVZQtTEw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Form Request Validation Exists Error Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://assets.infyom.com/blog/images/posts/18/date-time-local.png" data-lightbox="roadtrip" data-title="Use Of Required Without Validation Rule In Laravel">
+						<img class="card-img" src="https://assets.infyom.com/blog/images/posts/18/date-time-local.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQ6T9CxfUlHdMYLZccFnBrTopNlFIeP7PPQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Use Of Required Without Validation Rule In Laravel
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://w3adda.com/wp-content/uploads/2019/07/laravel-5-8-form-validation-example-2-1024x545.jpg" data-lightbox="roadtrip" data-title="Laravel 5 8 Form Validation Tutorial With Example W3adda">
+						<img class="card-img" src="https://w3adda.com/wp-content/uploads/2019/07/laravel-5-8-form-validation-example-2-1024x545.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDoAn9dJ_rX3iAHKbdbl8s5nGPTNGlbrMPAA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 8 Form Validation Tutorial With Example W3adda
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--T9fCO3ri--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wph7dujiko4umojtjuxp.png" data-lightbox="roadtrip" data-title="Mtyzuw1yqwvsum">
+						<img class="card-img" src="https://res.cloudinary.com/practicaldev/image/fetch/s--T9fCO3ri--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wph7dujiko4umojtjuxp.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBV6UHgz3Otw6H7L_9BPgzNBZqYvaIx9QjHw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Mtyzuw1yqwvsum
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.itsolutionstuff.com/upload/laravel-ajax-validation-example.png" data-lightbox="roadtrip" data-title="Laravel Ajax Request With Validation Example Itsolutionstuff Com">
+						<img class="card-img" src="https://www.itsolutionstuff.com/upload/laravel-ajax-validation-example.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE22ChGFZaBTCnJ2RSxvy-vSOWgl8VXf8Mkw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Ajax Request With Validation Example Itsolutionstuff Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://laravelnews.imgix.net/images/valiator-oo-featured.png?ixlib=php-3.3.0" data-lightbox="roadtrip" data-title="Laravel Validator Object Oriented Wrapper Laravel News">
+						<img class="card-img" src="https://laravelnews.imgix.net/images/valiator-oo-featured.png?ixlib=php-3.3.0" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-9EoKjXDTpUJc799N-dTnalKT9N61A6kmw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validator Object Oriented Wrapper Laravel News
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://5balloons.info/wp-content/uploads/2018/02/password-regex-validation-laravel-1280x720.png" data-lightbox="roadtrip" data-title="Strong Password Regex Validation With Laravel Authentication 5 Balloons">
+						<img class="card-img" src="https://5balloons.info/wp-content/uploads/2018/02/password-regex-validation-laravel-1280x720.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE9TOzmMIOzWkwwO7qdUQsBZODVzJgrMkP3w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Strong Password Regex Validation With Laravel Authentication 5 Balloons
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/laravel-request-validation-with-missing-values.png" data-lightbox="roadtrip" data-title="Laravel Request Validation With Missing Values Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/laravel-request-validation-with-missing-values.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-wzs_dUuT2YcofWCAQty0EGOUPZIcWZuGw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Request Validation With Missing Values Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://laraveldaily.com/wp-content/uploads/2019/02/Laravel-Validation-Attributes.png" data-lightbox="roadtrip" data-title="Laravel Validation Specify Attribute Names For Error Messages Laravel Daily">
+						<img class="card-img" src="https://laraveldaily.com/wp-content/uploads/2019/02/Laravel-Validation-Attributes.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-mZDb5KNQGomhavowQLCG9-RdGhLcPUTE2w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Specify Attribute Names For Error Messages Laravel Daily
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.expertphp.in/images/articles/ArtImgZdLV4x_google_nocaptcha-min.png" data-lightbox="roadtrip" data-title="Laravel Validate Form On Submit Using Google Nocaptcha Recaptcha Validation Example">
+						<img class="card-img" src="http://www.expertphp.in/images/articles/ArtImgZdLV4x_google_nocaptcha-min.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwzDWA_gTs3dqmgmhhpktgXR7RBtj5dhVGqw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validate Form On Submit Using Google Nocaptcha Recaptcha Validation Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://user-images.githubusercontent.com/67483209/86133124-900e6000-baf0-11ea-8d9e-51302d9ad21d.png" data-lightbox="roadtrip" data-title="Unique Validation With Ar Issue 13 Codezero Be Laravel Unique Translation Github">
+						<img class="card-img" src="https://user-images.githubusercontent.com/67483209/86133124-900e6000-baf0-11ea-8d9e-51302d9ad21d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-YOdYhlEl0r9z4HOIepuQbxJQP_iulclCg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Unique Validation With Ar Issue 13 Codezero Be Laravel Unique Translation Github
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>
